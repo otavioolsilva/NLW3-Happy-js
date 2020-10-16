@@ -36,7 +36,9 @@ function addPhotoField() {
 
   const input = newFieldContainer.children[0];
 
-  if (input.value == "") return;
+  if (input.value == "") {
+    return;
+  }
 
   input.value = "";
 
@@ -67,4 +69,12 @@ function toggleSelect(event) {
   const input = document.querySelector('[name="open_on_weekends"]');
 
   input.value = button.dataset.value;
+}
+
+function validate(event) {
+  const needsLatAndLng = false;
+  if(needsLatAndLng) {
+    event.preventDefault();
+    alert("Selecione uma localidade no mapa para continuar");
+  }
 }

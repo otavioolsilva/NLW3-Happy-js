@@ -6,6 +6,7 @@ const pages = require("./pages.js");
 //server
 const server = express();
 server
+  .use(express.urlencoded({ extended: true }))
   //static files
   .use(express.static("public"))
   //handlebars
@@ -15,6 +16,7 @@ server
   .get("/", pages.index)
   .get("/orphanage", pages.orphanage)
   .get("/orphanages", pages.orphanages)
-  .get("/create-orphanage", pages.createOrphanage);
+  .get("/create-orphanage", pages.createOrphanage)
+  .post("/save-orphanage", pages.saveOrphanage);
 
 server.listen(5500);
