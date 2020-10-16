@@ -1,0 +1,25 @@
+{
+  "name": "nlw_3",
+  "version": "1.0.0",
+  "description": "Happy - Projeto desenvolvido na Next Level Week #3 (Trilha Discovery) @Rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otavioolsilva/NLW3-Happy-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otavioolsilva/NLW3-Happy-js/issues"
+  },
+  "homepage": "https://github.com/otavioolsilva/NLW3-Happy-js#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.5"
+  }
+}
