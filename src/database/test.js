@@ -30,6 +30,6 @@ Database.then(async (db) => {
     console.log(orphanage);
     
     //delete orphanage
-    console.log(await db.run('DELETE FROM orphanages WHERE id = "4"'));
+    console.log(await db.run('DELETE FROM orphanages WHERE id = "5"'));
     */
 });
