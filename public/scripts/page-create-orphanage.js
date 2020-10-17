@@ -72,8 +72,7 @@ function toggleSelect(event) {
 }
 
 function validate(event) {
-  const needsLatAndLng = false;
-  if(needsLatAndLng) {
+  if(document.querySelector('[name="lat"]').value == "" || document.querySelector('[name="lng"]').value == "") {
     event.preventDefault();
     alert("Selecione uma localidade no mapa para continuar");
   }

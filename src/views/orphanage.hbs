@@ -26,7 +26,9 @@
 <body>
   <div id="page-orphanage">
     <aside class="animate-right sidebar">
-      <img src="/images/map-marker.svg" alt="Happy">
+      <a href="/">
+        <img src="/images/map-marker.svg" alt="Happy">
+      </a>
       <footer>
         <button onclick="history.back()">
           <img src="/images/arrow-back.svg" alt="Voltar">
@@ -35,6 +37,7 @@
     </aside>
 
     <main class="animate-appear with-sidebar">
+      <p class="title">Orfanato</p>
       <div class="orphanage-details">
         <img src="{{orphanage.firstImage}}" alt="{{orphanage.name}}" />
 
@@ -72,15 +75,15 @@
               {{orphanage.opening_hours}}
             </div>
             {{#if orphanage.open_on_weekends}}
-            <div class="open-on-weekends open">
-              <img src="/images/info.svg" alt="Informação" />
-              Atendemos fim de semana
-            </div>
+              <div class="open-on-weekends open">
+                <img src="/images/info.svg" alt="Informação" />
+                Atendemos fim de semana
+              </div>
             {{else}}
-            <div class="open-on-weekends closed">
-              <img src="/images/info-red.svg" alt="Informação" />
-              Não atendemos fim de semana
-            </div>
+              <div class="open-on-weekends closed">
+                <img src="/images/info-red.svg" alt="Informação" />
+                Não atendemos fim de semana
+              </div>
             {{/if}}
           </div>
 

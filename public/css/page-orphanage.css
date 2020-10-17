@@ -7,9 +7,19 @@ main {
     flex: 1;
 }
 
+p.title {
+  font: normal 18px "Nunito", sans-serif;
+  color: #8FA7B3;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
 .orphanage-details {
   width: 70rem;
-  margin: 6.4rem auto;
+  margin: 3.2rem auto;
   background: white;
   border: 1px solid #d3e2e5;
   border-radius: 2rem;
